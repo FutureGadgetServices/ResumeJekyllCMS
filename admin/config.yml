@@ -1,0 +1,18 @@
+﻿# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: FutureGadgetServices/ResumeJekyllCMS
+  base_url: https://sveltia-cms-auth.futuregadgetlabs.com
+
+media_folder: /assets/images
+
+collections:
+  - name: includes
+    label: "Includes"
+    folder: _includes
+    create: true
+    extension: html
+    format: raw
+    fields:
+      - { label: "Body", name: "body", widget: "text" }
